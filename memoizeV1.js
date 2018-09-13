@@ -1,9 +1,9 @@
-function memoize(param){
-	if(!memoize.cache){
+function memoize(param) {
+	if (!memoize.cache) {
 		memoize.cache = {};
 	}
 
-	if(!memoize.cache[param]){
+	if (!memoize.cache[param]) {
 		memoize.cache[param] = fib(param);
 	}
 
@@ -13,8 +13,8 @@ function memoize(param){
 
 
 //Fibonacci series
-function fib(n){
-  return (n < 2)? 1: fib(n-1) + fib(n - 2);  
+function fib(n) {
+	return (n < 2) ? 1 : fib(n - 1) + fib(n - 2);
 }
 
 
